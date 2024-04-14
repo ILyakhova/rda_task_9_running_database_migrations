@@ -42,10 +42,10 @@ CREATE TABLE ProductInventory (
 --changeset Iryna.Lyakhova:5 labels:0.0.2
 CREATE TABLE Users(
     ID INT,
-    FirstName VARCHAR(100),
-    LastName VARCHAR(100),
-    Email VARCHAR(100) UNIQUE NOT NULL
-    PRIMARY KEY(ID)
+    FirstName VARCHAR (100),
+    LastName VARCHAR (100),
+    Email VARCHAR (100) UNIQUE NOT NULL,
+    PRIMARY KEY (ID)
 );
 --ROLLBACK DROP TABLE Users;
 
