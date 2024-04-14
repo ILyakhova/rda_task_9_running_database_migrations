@@ -51,4 +51,5 @@ CREATE TABLE Users(
 
 --changeset Iryna.Lyakhova:6 labels:0.0.3
 CREATE INDEX idx_email ON Users(Email);
+SHOW INDEX FROM Users WHERE Key_name = 'idx_email';
 --ROLLBACK ALTER TABLE Users DROP INDEX idx_email;
