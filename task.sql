@@ -49,7 +49,6 @@ CREATE TABLE Users(
 );
 --ROLLBACK DROP TABLE Users;
 
---changeset Iryna.Lyakhova:5 labels:0.0.3
-DROP INDEX IF EXISTS idx_email ON Users;
+--changeset Iryna.Lyakhova:6 labels:0.0.3
 CREATE INDEX idx_email ON Users(Email);
 --ROLLBACK ALTER TABLE Users DROP INDEX idx_email;
