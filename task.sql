@@ -50,5 +50,5 @@ CREATE TABLE Users(
 --ROLLBACK DROP TABLE Users;
 
 --changeset Iryna.Lyakhova:5 labels:0.0.3
-CREATE INDEX Email ON Users(Email);
---ROLLBACK ALTER TABLE Users DROP INDEX Email;
+CREATE INDEX idx_Email ON Users(Email);
+--ROLLBACK ALTER TABLE Users DROP INDEX idx_Email;
