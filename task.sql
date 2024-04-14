@@ -44,7 +44,7 @@ CREATE TABLE Users(
     ID INT,
     FirstName VARCHAR (100),
     LastName VARCHAR (100),
-    Email VARCHAR (100) UNIQUE NOT NULL,
+    Email VARCHAR (100),
     PRIMARY KEY (ID)
 );
 --ROLLBACK DROP TABLE Users;
